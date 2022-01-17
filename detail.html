@@ -18,9 +18,24 @@
             <!-- Content -->
             <div>
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Hotel Radisson Blue">
-                <p><a href="payment.html">Book Now</a></p>
+                <!-- <p><a href="payment.html">Book Now</a></p> -->
             </div>
             <div>
+                <div>
+                    <form action="payment.html">
+                        <label for="adults">Adults: </label>
+                        <input type="number" name="adultnum" min="1" id="adultnum" required><br>
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" autocomplete="off" required><br>
+                        <label for="fdate">From Date: </label>
+                        <input type="date" name="fdate" id="fdate" required><br>
+                        <label for="tdate">To Date: </label>
+                        <input type="date" name="tdate" id="tdate" required><br>
+                        <label for="total">Total: </label>
+                        <input type="number" readonly><br>
+                        <button type="submit">Book now</button>
+                    </form>
+                </div>
                 <h2>Radisson Blu Hotel</h2>
                 <p>RATING</p>
                 <p>5 star</p>
