@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.loader{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+}
+
+.loader.darker{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    border: solid 2px #444444;
+    border-radius: 25% 25% 0 0;
+}
