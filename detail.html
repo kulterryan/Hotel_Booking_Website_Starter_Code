@@ -15,32 +15,50 @@
         <!-- Nav Bar -->
         <header>
             <img src="assests/images/logo.png" id="logo" alt="Logo" height="150px" width="200px"/>
-            <a href="/login.html" style="float: right;">Login</a>    
+            <a href="/login.html" id="login-header">Login</a>    
             <!-- Login -->
         </header>
 
-        <div>
+        <div id="main">
             <!-- Content -->
-            <div>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Hotel Radisson Blue" id="hotelimg">
-                <!-- <p><a href="payment.html">Book Now</a></p> -->
-            </div>
-            <div>
-                <div class="form-hotel">
+            <div class="forms-card">
+                <div class="form-img">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Hotel Radisson Blue" id="hotelimg">
+                </div>
+                <div class="form-input-details">
                     <form action="payment.html">
-                        <label for="adults">Adults: </label>
-                        <input type="number" name="adultnum" min="1" id="adultnum" required><br>
-                        <label for="name">Name: </label>
-                        <input type="text" name="name" id="name" autocomplete="off" required><br>
-                        <label for="fdate">From Date: </label>
-                        <input type="date" name="fdate" id="fdate" required><br>
-                        <label for="tdate">To Date: </label>
-                        <input type="date" name="tdate" id="tdate" required><br>
-                        <label for="total">Total: </label>
-                        <input type="number" readonly><br>
-                        <button type="submit">Book now</button>
+                        <div class="row">
+                            <label for="adults">Adults: </label>
+                            <input type="number" name="adultnum" min="1" id="adultnum" required><br>
+                        </div>
+                        <div class="row">
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" id="name" autocomplete="off" required><br>    
+                        </div>
+                        <div class="row">
+                            <label for="fdate">From Date: </label>
+                            <input type="date" name="fdate" id="fdate" required><br>    
+                        </div>
+                        <div class="row">
+                            <label for="fdate">From Date: </label>
+                            <input type="date" name="fdate" id="fdate" required><br>
+                        </div>
+                        <div class="row">
+                            <label for="tdate">To Date: </label>
+                            <input type="date" name="tdate" id="tdate" required><br>
+                        </div>
+                        <div class="row">
+                            <label for="total">Total: </label>
+                            <input type="number" readonly><br>
+                        </div>
+                        <div class="row">
+                            <button type="submit" value="Book Now">Book now</button>
+                        </div>
                     </form>
                 </div>
+            </div>
+
+            <div>
                 <div class="hotel-details">
                     <h2>Radisson Blu Hotel</h2>
                     <p>RATING</p>
@@ -60,11 +78,11 @@
         </div>
         <!-- Footer -->
         <footer>
-            <nav style="float: right; padding-right: 1.6%;">
+            <nav class="contact-footer">
                 <a href="/contact.html">Contact Us</a>
             </nav>
-            <p style="font-size: 12px; padding-top: 1%;">© 2020 ROOM SEARCH PVT. LTD.</p>
-            <nav>
+            <p style="font-size: 12px; font-weight: bold;">© 2020 ROOM SEARCH PVT. LTD.</p>
+            <nav class="social-footer">
                 <a href="https://facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" class="img-socialmedia" width="22px" height="20px"></a>
                 <a href="https://instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" class="img-socialmedia" width="22px" height="20px"></a>
                 <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" class="img-socialmedia" width="22px" height="20px"></a>    

@@ -1,7 +1,7 @@
 #hotelimg{
-    margin: 2% 4% 0% 4%;
-    height: 500px;
-    width: 500px;
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .img-socialmedia{
@@ -15,4 +15,45 @@
 
 .hotel-details{
     margin: 1% 4% 2% 4%;
+}
+
+.forms-card{
+    display: flex;
+    flex-direction: row;
+    max-height: 400px;
+    margin: 4%;
+    border: 2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.form-img{
+    width: 60%;
+    height: 100%;
+    padding: 2% 20%;
+    border-right: 2px solid black;
+}
+
+.form-input-details{
+    width: 40%;
+    height: 100%;
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+input{
+    width: 60%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label{
+    padding: 12px 0px 12px 0;
+    width: 40%;
 }

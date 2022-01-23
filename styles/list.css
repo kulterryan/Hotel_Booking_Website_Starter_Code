@@ -9,6 +9,31 @@ ul#view li{
 .hotel-img{
     height: 200px;
     width: 250px;
+    object-fit: cover;
+}
+
+/* Cards */
+.list-view-cards{
+    margin: 0% 4% 1% 4%;
+    width: 40%;
+    background-color: lightgray;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-view-cards-img {
+    width: 40%;
+    height: 100%;
+}
+
+/* Hotel Description */
+.hotel-details{
+    width: 60%;
+    height: 100%;
+    padding: 2%;
 }
 
 /* Social Media Images */
@@ -21,13 +46,6 @@ ul#view li{
 #list-view{
     display: flex;
     flex-wrap: wrap;
-}
-
-/* Cards */
-.list-view-cards{
-    margin: 4%;
-    width: 40%;
-    background-color: rgb(132,136,139);
 }
 
 /* Map View */

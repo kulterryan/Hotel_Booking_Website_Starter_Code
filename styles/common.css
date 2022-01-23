@@ -37,6 +37,12 @@ footer{
     height: 60px;
     justify-content: center;
     align-self: center;
+    margin-left: 1%;
+}
+
+#main{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /* Links */
@@ -48,4 +54,24 @@ a{
 a:active{
     color: black;
     text-decoration: none;
+}
+
+/* Login Link */
+#login-header{
+    float: right;
+    margin-right: 2%;
+}
+
+/* Contact Footer */
+.contact-footer{
+    margin-left: 2%;
+}
+
+/* Social Footer */
+.social-footer{
+    margin-right: 2%;
+}
+.img-socialmedia{
+    width: 22px;
+    height: 20px;   
 }
