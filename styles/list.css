@@ -1,39 +1,36 @@
-
-body{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #e0e0e0;
+/* Inline */
+ul#view li{
+    display: inline;
+    padding: 10px;
+    font-weight: bold;
 }
 
-header{
-    display: block;
-    background-color: rosybrown;
-}
-
-footer{
-    display: block;
-    background-color: rosybrown;
-}
-
-#logo{
-    width: 60px;
-    height: 60px;
-}
-
+/* Hotel Img */
 .hotel-img{
     height: 200px;
     width: 250px;
 }
 
+/* Social Media Images */
 .img-socialmedia{
     width: 22px;
     height: 20px;   
 }
 
-.hotel-card{
-    margin: 2%;
-    background-color: rgb(132,136,139);
+/* List View */
+.list-view{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Cards */
+.list-view-cards{
+    margin: 4%;
     width: 40%;
+    background-color: rgb(132,136,139);
+}
+
+/* Map View */
+#map-view{
+    display: none;
 }
