@@ -6,6 +6,15 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <!-- Common  -->
         <link rel="stylesheet" href="styles/payment.css">
         <link rel="stylesheet" href="styles/common.css">
 
@@ -14,36 +23,101 @@
         <!-- Nav Bar -->
         <header>
             <img src="assests/images/logo.png" id="logo" alt="Logo" height="150px" width="200px"/>
-            <a href="/login.html" id="login-header">Login</a>    
+            <div class="login-div">
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">LOGIN</button>
+            </div>
             <!-- Login -->
         </header>
-        <div>
-            <!-- Content -->
-            <div>
-                <div id="hotel-img">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Hotel Radisson Blue" id="hotelimg">
-                    <h2>Radisson Blu Hotel</h2>
-                    <p>#38 of 1,289 hotels in New Delhi</p>
-                    <p>National Highway 8, New Delhi 110017 India</p>    
-                </div>
 
-                <div id="customer-div">
-                    <p><b>Name:</b> John Doe</p>
-                    <p><b>Number of Adults:</b> 2</p>
-                    <p><b>Check-in Date: </b>06/06/2020</p>
-                    <p><b>Check-out Date: </b>08/06/2020</p>
+        <!-- Modal Box for LogIn popup -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Please LogIn</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body centerInput">
+                        <form action="index.html" method="get">
+                            <br>
+                            <label for="uid">Username:</label>
+                            <input type="text" id="uid" name="uid" placeholder="Enter Username" required><br><br>
+                            <label for="pass">Password:</label>
+                            <input type="password" id="pass" name="pass" required placeholder="Enter Password"><br><br>
+                            <br>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-primary text-center">LogIn</button>
+                        </from>
+                    </div>
                 </div>
-                <div id="tariff">
-                    <p><b>Traffic Breakdown: </b>Rs. 1000 x 2 Adults x 5 Nights</p>
-                    <p><b>Total Amount: </b>Rs. 10000</p>    
+            </div>
+        </div>
+
+        <!-- Modal Box for contact US popup-->
+        <div class="modal fade" id="exampleModalContactUs" tabindex="-1" aria-labelledby="exampleModalLabel"aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body centerInput">
+                        <p>Thank you for reaching out!!!</p>
+                        <p>Please enter your email and we will get back to you.</p>
+                        <form action="index.html">
+                            <label for="email">Email: </label>
+                            <input type="email" required  placeholder="Enter Your Email"><br>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                        </from>
+                    </div>
                 </div>
-                <a href="#">Pay Now</a>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div>
+            <!-- Hotel Desc -->
+            <div>
+                <div class="hotel-desc-card">
+                    <div class="row">
+                        <img class="col-sm" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Hotel Radisson Blue" id="hotelimg">
+                        <div class="col-sm hotel-details">
+                            <h2>Radisson Blu Hotel</h2>
+                            <p>#38 of 1,289 hotels in New Delhi</p>
+                            <p>National Highway 8, New Delhi 110017 India</p>    
+                        </div>
+                    </div>   
+                </div>
+            </div>
+
+            <!-- Tarrif Charges -->
+            <div>
+                <div class="row justify-content-center" id="tariff">
+                    <div class="col align-content-around" id="customer-div">
+                        <p><b>Name:</b> John Doe</p>
+                        <p><b>Number of Adults:</b> 2</p>
+                        <p><b>Check-in Date: </b>06/06/2020</p>
+                        <p><b>Check-out Date: </b>08/06/2020</p>
+                    </div>
+                    <div class="col align-content-around">
+                        <p><b>Traffic Breakdown: </b>Rs. 1000 x 2 Adults x 5 Nights</p>
+                        <p><b>Total Amount: </b>Rs. 10000</p>    
+                    </div>
+                    <div class="col align-content-around">
+                        <button class="btn btn-success">Pay Now</button>
+                    </div>
+                </div>
             </div>
         </div>   
+
         <!-- Footer -->
         <footer>
             <nav class="contact-footer">
-                <a href="/contact.html">Contact Us</a>
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModalContactUs">Contact Us</button>
             </nav>
             <p style="font-size: 12px; font-weight: bold;">© 2020 ROOM SEARCH PVT. LTD.</p>
             <nav class="social-footer">
@@ -51,7 +125,8 @@
                 <a href="https://instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" class="img-socialmedia" width="22px" height="20px"></a>
                 <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" class="img-socialmedia" width="22px" height="20px"></a>    
             </nav>
-        </footer>  
+        </footer>
+
         <script src="scripts/index.js" async defer></script>
     </body>
 </html>

@@ -1,12 +1,10 @@
-#hotel-img{
+.hotel-img{
     background-color: rgb(132,136,139);
-    width: 50%;
-    height: 20%;
     margin: 2% auto;
 }
 
 #customer-div{
-    margin: 2%;
+    margin: 0%;
 }
 
 #tariff{
@@ -14,6 +12,7 @@
     border: solid 2px black;
     border-radius: 5px;
     padding: 1% 2%;
+    background-color: rosybrown;
 }
 
 #logo{
@@ -22,11 +21,19 @@
 }
 
 #hotelimg{
-    height: 500px;
-    width: 500px;
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
 }
 
-.img-socialmedia{
-    width: 22px;
-    height: 20px;   
+.hotel-desc-card{
+    margin: 2% auto;
+    width: 60%;
+    height: auto;
+    background-color: rgb(132,136,139);
+    border-radius: 5px;
+}
+
+.hotel-details{
+    padding: 1% 2%;
 }

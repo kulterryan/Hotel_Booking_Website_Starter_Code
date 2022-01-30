@@ -1,18 +1,16 @@
+/* Hotel Image */
 #hotelimg{
     max-height: 350px;
     width: 100%;
     object-fit: cover;
 }
 
-.img-socialmedia{
-    width: 22px;
-    height: 20px;   
-}
 
 .form-hotel{
     margin: 0% 4% 1% 4%;
 }
 
+/* Hotel details */
 .hotel-details{
     margin: 1% 4% 2% 4%;
 }
@@ -20,7 +18,7 @@
 .forms-card{
     display: flex;
     flex-direction: row;
-    max-height: 400px;
+    /* max-height: 400px; */
     margin: 4%;
     border: 2px solid black;
     border-radius: 5px;
@@ -31,22 +29,19 @@
     width: 60%;
     height: 100%;
     padding: 2% 20%;
-    border-right: 2px solid black;
 }
 
 .form-input-details{
+    border-left: 2px solid black;
     width: 40%;
     height: 100%;
     padding: 20px;
 }
 
-.row{
-    display: flex;
-    flex-direction: row;
-}
+
 
 input{
-    width: 60%;
+    width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;

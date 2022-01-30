@@ -1,3 +1,8 @@
+/* Main */
+#main{
+    margin: 20px auto; 
+}
+
 /* Inline */
 ul#view li{
     display: inline;
@@ -24,6 +29,10 @@ ul#view li{
     align-items: center;
 }
 
+.list-view-cards:hover{
+    background-color: rosybrown;
+}
+
 .list-view-cards-img {
     width: 40%;
     height: 100%;
@@ -43,12 +52,7 @@ ul#view li{
 }
 
 /* List View */
-#list-view{
+.list-view{
     display: flex;
     flex-wrap: wrap;
-}
-
-/* Map View */
-#map-view{
-    display: none;
 }
